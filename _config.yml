@@ -3,11 +3,11 @@ name: Amresh Kumar
 bio: Seeking a challenging opportunity as a System Administrator with a growth oriented organization where I can utilize my creativity and breadth of technical skills to contribute to their success and my own.
 
 # twitter summary info
-description: A blog about technology and stuff related
+description: This is Profile of Amresh Kumar
 
 # if it's an external image, update below for true
 # better with square images
-external-image: false
+external-image: true
 picture: assets/images/profile.jpg
 
 # If you want to include your resume, set to true
@@ -50,7 +50,7 @@ github: mygithub
 medium: medium
 # vimeo: myvimeo
 # lanyrd: mylanyrd
-email: myemail@gmail.com
+email: amresh.aaa@gmail.com
 
 authors:
     johndoe:
