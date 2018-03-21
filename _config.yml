@@ -1,6 +1,8 @@
 # main text of home
 name: Amresh Kumar
-bio: Seeking a challenging opportunity as a System Administrator with a growth oriented organization where I can utilize my creativity and breadth of technical skills to contribute to their success and my own.
+bio: Seeking a challenging opportunity as a System Administrator with a growth oriented
+organization where I can utilize my creativity and breadth of technical skills to contribute to their
+success and my own.
 
 # twitter summary info
 description: This is Profile of Amresh Kumar
@@ -80,7 +82,7 @@ projects: true
 
 # if you don't need "about" or "blog", comment them out below
 about: true
-blog: true
+Skills: true
 # do you want to show the "read time" of the posts?
 read-time: true
 
