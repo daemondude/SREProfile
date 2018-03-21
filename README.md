@@ -1,66 +1,134 @@
-<p align="center">
-    <h2 align="center">Indigo Minimalist Jekyll Template - <a href="http://sergiokopplin.github.io/indigo/">Demo</a> · <a href="https://travis-ci.org/sergiokopplin/indigo"><img src="https://camo.githubusercontent.com/5393485b732749b3499264168fa8af60166071e8/68747470733a2f2f7472617669732d63692e6f72672f73657267696f6b6f70706c696e2f696e6469676f2e7376673f6272616e63683d67682d7061676573" alt="Build Status" data-canonical-src="https://travis-ci.org/sergiokopplin/indigo.svg?branch=gh-pages" style="max-width:100%;"></a></h2>
-</p>
+![Sustain - Logo][logo]
 
-<p align="center">This is a simple and minimalist template for Jekyll for those who likes to eat noodles.</p>
+## Table of Contents
 
-***
+- [Installation](#installation)
+- [Quick start](#quick-start)
+- [Features](#features)
+  - [Syntax highlighting](#syntax-highlighting)
+  - [Disqus](#disqus)
+  - [Google Analytics](#google-analytics)
+- [About](#about)
+- [Contributing](#contributing)
+- [Changelog](#changelog)
+- [License](#license)
 
-<p align="center">
-    <b><a href="README.md#what-has-inside">What has inside</a></b>
-    |
-    <b><a href="README.md#setup">Setup</a></b>
-    |
-    <b><a href="README.md#settings">Settings</a></b>
-    |
-    <b><a href="README.md#how-to">How to</a></b>
-</p>
+********************
 
-<p align="center">
-    <img src="https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png" />
-</p>
+![Sustain Screen][screenshot]
 
-## What has inside
+********************
 
-- [Jekyll](https://jekyllrb.com/), [Sass](http://sass-lang.com/) ~[RSCSS](http://rscss.io/)~ and [SVG](https://www.w3.org/Graphics/SVG/)
-- Tests with [Travis](https://travis-ci.org/)
-- Google Speed: [98/100](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fsergiokopplin.github.io%2Findigo%2F);
-- No JS. :sunglasses:
+<p align="center"><b><a href="https://demo.nurlan.co/hugo-sustain/">Sustain Live Demo</a></b></p>
 
-## Setup
+## Installation
 
-0. :star: to the project. :metal:
-2. Fork the project [Indigo](https://github.com/sergiokopplin/indigo/fork)
-3. Edit `_config.yml` with your data (check <a href="README.md#settings">settings</a> section)
-4. Write some posts :bowtie:
+#### With `git`
 
-If you want to test locally on your machine, do the following steps also:
-
-1. Install [Jekyll](http://jekyllrb.com), [NodeJS](https://nodejs.org/) and [Bundler](http://bundler.io/).
-2. Clone the forked repo on your machine
-3. Enter the cloned folder via terminal and run `bundle install`
-4. Then run `bundle exec jekyll serve --config _config.yml,_config-dev.yml`
-5. Open it in your browser: `http://localhost:4000`
-6. Test your app with `bundle exec htmlproofer ./_site`
-7. Do you want to use the [jekyll-admin](https://jekyll.github.io/jekyll-admin/) plugin to edit your posts? Go to the admin panel: `http://localhost:4000/admin`. The admin panel will not work on GitHub Pages, [only locally](https://github.com/jekyll/jekyll-admin/issues/341#issuecomment-292739469).
-
-## Settings
-
-You must fill some informations on `_config.yml` to customize your site.
-
+From the root of your Hugo site, clone the theme into `themes/hugo-sustain` by running :
 ```
-name: John Doe
-bio: 'A Man who travels the world eating noodles'
-picture: 'assets/images/profile.jpg'
-...
-
-and lot of other options, like width, projects, pages, read-time, tags, related posts, animations, multiple-authors, etc.
+git clone https://github.com/nurlansu/hugo-sustain.git themes/hugo-sustain
 ```
 
-## How To?
+#### Manual
 
-Check the [FAQ](./FAQ.md) if you have any doubt or problem.
+1. [Download][zip-archive] zip archive.
+2. Unarchive it.
+3. Move `hugo-sustain` folder in `themes` folder of your blog
 
----
+For more information read the official [setup guide][hugo-guide] of Hugo.
 
-[MIT](http://kopplin.mit-license.org/) License © Sérgio Kopplin
+## Quick start
+
+After installation, take a look in the `exampleSite` folder at. This directory contains an example config file and the content for the demo. It serves as an example setup for your documentation.
+
+```
+  exampleSite
+  ├── config.toml
+  ├── content
+  │   ├── projects.md
+  │   │
+  │   └── blog
+  │       ├── creating-a-new-theme.md
+  │       ├── go-is-for-lovers.md
+  │       ├── hugo-is-for-lovers.md
+  │       └── migrate-from-jekyll.md
+  │
+  ├── data
+  │   └── projects.yml
+  │
+  └── static
+```
+
+Copy at least the `config.toml` in the root directory of your website. Overwrite the existing config file if necessary.
+
+Hugo includes a development server, so you can view your changes as you go -
+very handy. Spin it up with the following command:
+
+``` sh
+hugo serve
+```
+
+Now you can go to [localhost:1313][local] and the Sustain
+theme should be visible.
+
+## Features
+
+### Syntax highlighting
+
+Use `highlight = true` in the front matter to include [`highlight.js`][highlight-js] javascript and css files.
+
+### Disqus
+
+To use this feature, uncomment and fill out the `disqusShortname` parameter in config.toml`.
+
+### Google Analytics
+
+To add Google Analytics, simply sign up to [Google Analytics][g-analytics] to obtain your Google Tracking ID, and add this tracking ID to the `googleAnalytics` parameter in `config.toml`.
+
+## About
+
+This is a port of the Jekyll theme [Sustain][sustain-jekyll] by [Fábio Madeira][sustain-author]. It supports most of the features of the original theme.
+
+## Contributing
+
+Pull requests, bug fixes, and new features are welcome!
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -a -m 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request on GitHub
+
+## Changelog
+
+> Version 1.0.1
+
+- Added proper "Projects" page rendering
+- Fixes, many fixes
+
+> Version 1.0
+
+- Initial release
+
+## License
+
+<p align="center">
+  <a href="./LICENSE.md"><img src="https://i.nurlan.co/logo.svg" width="100%" height="128"></a>
+  <a href="./LICENSE.md"><strong>MIT</strong></a>
+</p>
+
+
+
+[logo]: https://i.nurlan.co/sustain.png
+[screenshot]: https://i.nurlan.co/sustain-screen.png
+[bootstrap]: https://getbootstrap.com/
+[hugo]: https://gohugo.io/
+[gh-pages]: https://pages.github.com/
+[zip-archive]: https://github.com/nurlansu/hugo-sustain/archive/master.zip
+[hugo-guide]: https://gohugo.io/overview/installing/
+[local]: http://localhost:1313/
+[highlight-js]: https://highlightjs.org/
+[g-analytics]: https://www.google.com/analytics/
+[sustain-jekyll]: https://github.com/biomadeira/sustain/
+[sustain-author]: https://github.com/biomadeira/
