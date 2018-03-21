@@ -1,0 +1,40 @@
+<html>
+  <head><title>Online Compiler</title>
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body><h1 align="center">Hello Programmers</h1>
+
+    <div id="content">
+	<input type="text" placeholder="Username" id="username">
+	</br></br></br>
+	<input type="text" placeholder="Program Name" id="prog_name">
+	<select id="LanguageSelected">
+        	<option value="C">C  (.c)</option>
+       		<option value="C++">C++  (.cpp)</option>
+        	<option value="Java">Java  (.java)</option>
+        	<option value="Python">Python2.7  (.py)</option>
+	</select>
+
+
+    </br></br>
+    <textarea id ="postText" rows=10 cols=50></textarea>
+    <span id="charCounter">Characters: 0</span>
+
+    <br/></br>
+      <input type="submit" value="   Run   " id="run" class="buttons">
+    </br></br>
+    <p>Output:-</p>
+      <textarea id ="output" rows=10 cols=50></textarea>
+      <span id="postIDreturned"></span>
+    </br></br>
+	<button onclick="savefile()" class="buttons">Save</button>
+	<p id="dlink">Click save button to generate download link.</p>
+  </div>
+    <script src="scripts.js"></script>
+    <!-- <script language="javascript" type="text/javascript" src="libraries/p5.js"</script>
+    <script language="javascript" type="text/javascript" src="libraries/p5.dom.js"</script>
+    <script language="javascript" type="text/javascript" src="sketch.js"</script> -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+  </body>
+</html>
