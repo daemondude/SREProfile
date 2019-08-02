@@ -1,0 +1,22 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/html/
+hooks:
+  BeforeInstall:
+    - location: echo "BeforeInstall"
+      timeout: 300
+      runas: root
+  AfterInstall:
+    - location: echo "AfterInstall"
+      timeout: 300
+      runas: root
+  ApplicationStart:
+    - location: echo "AfterInstall"
+      timeout: 300
+      runas: root
+  ApplicationStop:
+    - location: echo "ApplicationStop"
+      timeout: 300
+      runas: root
